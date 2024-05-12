@@ -19,7 +19,7 @@ public class EditContactPhoneNumberMenuAction implements MenuAction {
     public void execute() {
         System.out.println("Введіть номер контакту, якому потрібно змінити номер телефону:");
         int index = scanner.nextInt();
-        scanner.nextLine(); // consume newline
+        scanner.nextLine();
         if (index >= 1 && index <= contacts.getAll().size()) {
             System.out.println("Введіть новий номер телефону:");
             String newPhoneNumber = scanner.nextLine();

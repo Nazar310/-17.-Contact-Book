@@ -19,7 +19,7 @@ public class RemoveContactMenuAction implements MenuAction {
     public void execute() {
         System.out.println("Введіть номер контакту, який потрібно видалити:");
         int index = scanner.nextInt();
-        scanner.nextLine(); // consume newline
+        scanner.nextLine();
         if (index >= 1 && index <= contacts.getAll().size()) {
             contacts.remove(index - 1);
             System.out.println("Контакт видалено успішно.");
